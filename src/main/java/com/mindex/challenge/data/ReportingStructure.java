@@ -28,14 +28,6 @@ public class ReportingStructure {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ReportingStructure that = (ReportingStructure) o;
-        return Objects.equals(getEmployee(), that.getEmployee()) && Objects.equals(getNumberOfReports(), that.getNumberOfReports());
-    }
-
-    @Override
     public String toString() {
         return "ReportingStructure{" +
                 "employee=" + employee +
